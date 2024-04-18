@@ -35,7 +35,6 @@ ALAMBIX_PATH := $(call esc_space,$(ALAMBIX_DIR))
 .PHONY: all clean
  
 all: $(PROG)
- 
 .c.o:
 	$(CC) -c $(CCFLAGS) $< -o $@
  
