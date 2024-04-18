@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<link rel="stylesheet" media="screen" href="style.css">
+<title>Documentation Alambix</title>
+</head>
+
+<body>
+<h1>Documentation Alambix</h1>
+
+<h2>Introduction</h2>
+
+<p>
+Alambix est un challenge de programmation multi-tâches (version Linux).
+</p>
+<p>
+Cette documentation concerne les instructions à suivre pour programmer l'Alambix. Plusieurs étapes vous sont proposées pour relever le défi.
+</p>
+<p>
+En complément, une documentation sur l'<a href="../../../doc/html/index.html">interface de programmation Alambix (API)</a> est également disponible.
+Cette documentation est qualifiée de documentation de l'API dans la suite de ce document.
+</p>
+
+<h2>Avant propos</h2>
+
+<h3>Premier pas : Accès à la documentation</h2>
+
+<p>
+Cette étape correspond à <a href="../../../doc/html/index.html#step1">Step 1: launch the instructions documentation</a> de l'accueil de la documentation de l'API.
+</p>
+<p>
+Si vous lisez ces lignes vous avez du réussir cette étape...
+</p>
+
+<h3>Animer l'Alambix avec des <i>threads</i></h2>
+
+<p>
+Quatre personnages vont agir et interagir dans l'Alambix :
+<ul> 
+<li> <img src="../img/client0.png" alt="client 0" align="middle"/> <img src="../img/client1.png"  alt="client 0" align="middle"/> <i>client0</i> et <i>client1</i>, les deux clients de l'Alambix ;</li>
+<li> <img src="../img/waiter0-icon.png" alt="waiter" align="middle"/> <i>waiter</i>, le serveur de l'Alambix ;</li>
+<li> <img src="../img/bartender0-icon.png" alt="bartender" align="middle"/> <i>bartender</i>, le barman de l'Alambix.</li>
+</ul>
+</p>
+
+<p>
+À chacun de ces personnages correspond un <i>thread</i> de programmation (cf. la documentation de l'API <a href="../../../doc/html/group__alambix__pthread.html">The Alambix pthreads</a>).
+</p>
+
+<p>
+La création des <i>threads</i> des personnages et leur lancement (ou démarrage) se feront suite à un clique sur le bouton Start de l'interface utilisateur 
+(cf. <a href="../../../doc/html/index.html#ui">The Alambix user interface</a> de la documentation de l'API). 
+Pour cela une fonction <tt>alambix_start()</tt> doit être implémentée 
+(cf. <a href="../../../doc/html/group__alambix__start.html">Start the Alambix</a> de la documentation de l'API).
+Cette fonction sera appelée suite au clique sur le bouton Start. 
+</p>
+
+<p>
+Remarque : il vous sera demandé de sélectionner au moins une boisson pour chaque client de l'Alambix avant d'animer les personnages (bouton Start).
+Un clique sur un client fait apparaître un menu de sélection des boissons que souhaite commander le client.
+</p> 
+
+<p>
+À partir de là vous pouvez tenter d'animer l'Alambix...
+</p>
+
+<h2>Passer une commande dans l'Alambix</h2>
+
+<h3>Niveau 1 : les clients de l'Alambix saisissent leur commande</h3>
+
+<p>
+Indice : jeter un œil sur <a href="../../../doc/html/group__alambix__order__drinks.html">Order drinks in Alambix</a> de la documentation de l'API.
+<p>
+ 
+<h3>Niveau 2 : le serveur de l'Alambix prend la commande</h3>
+
+<p>
+Indice : jeter un œil sur <a href="../../../doc/html/group__alambix__take__order.html">Take an order in Alambix</a> de la documentation de l'API.
+<p/>
+
+<h3>Niveau 3 : le serveur de l'Alambix transmet la commande au barman</h3>
+
+<p>
+Indice : jeter un œil sur <a href="../../../doc/html/group__alambix__transmit__order.html">Transmit an order in Alambix</a> de la documentation de l'API.
+<p/>
+
+<h3>Niveau 4 : le barman de l'Alambix réceptionne la commande du serveur</h3>
+
+<p>
+Indice : jeter un œil sur <a href="../../../doc/html/group__alambix__transmit__order.html">Transmit an order in Alambix</a> de la documentation de l'API.
+<p/>
+
+<h2>Préparer une commande dans l'Alambix</h2>
+
+<h3>Niveau 5 : le barman de l'Alambix lance la fabrication des boissons</h3>
+
+<p>
+Indice : jeter un œil sur <a href="../../../doc/html/group__alambix__prepare__order.html">Prepare an order in Alambix</a> de la documentation de l'API.
+<p/>
+
+<h2>Servir une commande dans l'Alambix</h2>
+
+<h3>Niveau 6 : le barman de l'Alambix met les boissons à disposition du serveur</h3>
+
+<p>
+Indice : jeter un œil sur <a href="../../../doc/html/group__alambix__serve__order.html">Serve an order in Alambix</a> de la documentation de l'API.
+<p/>
+
+<h3>Niveau 7 : le serveur sert les boissons aux clients de l'Alambix</h3>
+
+<p>
+Indice : jeter un œil sur <a href="../../../doc/html/group__alambix__serve__order.html">Serve an order in Alambix</a> de la documentation de l'API.
+<p/>
+
+<div class="footer">
+Alambix Documentation - Matthias Brun (matthias.brun@eseo.fr) - (c) 2019
+</div>
+</body>
+</html>
