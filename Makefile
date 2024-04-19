@@ -3,7 +3,7 @@
 #
  
 # Alambix install directory
-ALAMBIX_DIR := $(realpath /home/evan/Documents/PMU/Projet_Alambix/alambix-v0.2.4)
+ALAMBIX_DIR := $(realpath /home/evan/Documents/PMU/Projet_Alambix/PMU/alambix-v0.2.4)
  
 # Alambix user interface
 ALAMBIX_UI := original
